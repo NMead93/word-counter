@@ -17,8 +17,8 @@ namespace WordCounter
             Post["/Count"] = _ =>
             {
                 RepeatCounter newCounter = new RepeatCounter(Request.Form["word"], Request.Form["sentence"]);
-                Return View["result.cshtml", newCounter];
-            }
+                return View["results.cshtml", newCounter];
+            };
         }
     }
 }
