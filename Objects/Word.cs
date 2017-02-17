@@ -41,7 +41,7 @@ namespace WordCounter.Objects
             string[] words = GetSentence().Split(separators, StringSplitOptions.RemoveEmptyEntries);
             foreach (var word in words)
             {
-                if (GetWord() == word)
+                if (GetWord().ToLower() == word.ToLower())
                 {
                     wordCount++;
                 }
