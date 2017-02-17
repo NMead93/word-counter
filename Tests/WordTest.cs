@@ -49,5 +49,12 @@ namespace WordCcounter
             Assert.Equal(3, testWord.CountRepeats());
         }
 
+        [Fact]
+        public void CountWord_CountWordInMultiWordSentencePunctuationInsensitiveHardTest_true()
+        {
+            RepeatCounter testWord = new RepeatCounter("hello", "hello, Hello; dude @hello. world $%HelLo:");
+            Assert.Equal(4, testWord.CountRepeats());
+        }
+
     }
 }

@@ -37,10 +37,11 @@ namespace WordCounter.Objects
         public int CountRepeats()
         {
             int wordCount = 0;
-            string[] separators = {" ", ".", ",", "-", "!", "_", "?", "''", ":", ";", "~", "@", "#", "$", "%", "^", "&", "*", "(", ")", "=", "+"};
+            string[] separators = {" ", ".", ",", "-", "!", "_", "?", "''", ":", ";", "~", "@", "#", "$", "%", "^", "&", "*", "(", ")", "=", "+", ""};
             string[] words = GetSentence().Split(separators, StringSplitOptions.RemoveEmptyEntries);
             foreach (var word in words)
             {
+                Console.WriteLine(word);
                 if (GetWord().ToLower() == word.ToLower())
                 {
                     wordCount++;
