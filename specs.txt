@@ -1,0 +1,11 @@
+1. User Inputs letter and one letter sentence, outputs 1 or 0. Checks existence at simplest level
+
+2. User Inputs letter and multiple letter string, outputs letter frequency as int. Next step up from one letter.
+
+2.5 User Inputs letter and multiple letter string with, outputs frequency and counts for case insensitivity.
+
+3. User Inputs word and one word sentence, outputs int word frequency. Moves from single letter string to more complex string. 
+
+4. User Inputs word and multiple word sentence, outputs int word frequency. Moves to complex sentences. Doesn't account for punctiation.
+
+5. User Inputs word and multiple word sentence with punctuation, outputs int word frequency. End Goal.
