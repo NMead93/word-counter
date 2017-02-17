@@ -14,13 +14,13 @@ namespace WordCcounter
             Assert.Equal(1, testWord.CountRepeats());
         }
 
-        // [Fact]
-        // public void CountWord_CountWordInMultiLetterSentenceCaseSensitive_true()
-        // {
-        //     RepeatCounter testWord = new RepeatCounter("h", "h e l l h h");
-        //     Assert.Equal(3, testWord.CountRepeats());
-        // }
-        //
+        [Fact]
+        public void CountWord_CountWordInMultiLetterSentenceCaseSensitive_true()
+        {
+            RepeatCounter testWord = new RepeatCounter("h", "h e l l h h");
+            Assert.Equal(3, testWord.CountRepeats());
+        }
+
         // [Fact]
         // public void CountWord_CountWordInMultiLetterSentenceCaseInSensitive_true()
         // {

@@ -36,14 +36,17 @@ namespace WordCounter.Objects
 
         public int CountRepeats()
         {
-            if (GetWord() == GetSentence())
+            int wordCount = 0;
+            string[] separators = {" "};
+            string[] words = GetSentence().Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var word in words)
             {
-                return 1;
+                if (GetWord() == word)
+                {
+                    wordCount++;
+                }
             }
-            else
-            {
-                return 0;
-            }
+            return wordCount;
         }
     }
 }
