@@ -28,13 +28,13 @@ namespace WordCcounter
             Assert.Equal(3, testWord.CountRepeats());
         }
 
-        // [Fact]
-        // public void CountWord_CountWordInOneWordSentence_true()
-        // {
-        //     RepeatCounter testWord = new RepeatCounter("hello", "Hello");
-        //     Assert.Equal(1, testWord.CountRepeats());
-        // }
-        //
+        [Fact]
+        public void CountWord_CountWordInOneWordSentence_true()
+        {
+            RepeatCounter testWord = new RepeatCounter("hello", "Hello");
+            Assert.Equal(1, testWord.CountRepeats());
+        }
+
         // [Fact]
         // public void CountWord_CountWordInMultiWordSentence_true()
         // {
