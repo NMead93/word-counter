@@ -3,19 +3,19 @@
 }
 
 <div class="row">
-    <form class="col s12" id="input">
+    <form class="col s12" id="input" action="/Count" method="post">
       <div class="col s6">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Word</label>
+          <textarea id="word" class="materialize-textarea" name="word"></textarea>
+          <label for="word">Word</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Sentence</label>
+          <textarea id="sentence" class="materialize-textarea" name="sentence"></textarea>
+          <label for="sentence">Sentence</label>
         </div>
       </div>
       <button type="submit" class="waves-effect waves-light btn" name="button">Check Frequency</button>

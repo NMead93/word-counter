@@ -1,0 +1,15 @@
+@{
+    Layout = "Shared/_Layout.cshtml";
+}
+
+<div class="row">
+        <div class="col s12 m6">
+          <div class="card cyan darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Word Frequency</span>
+              <p>The text contains @Model.CountRepeats instances of the word @Model.GetWord</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
